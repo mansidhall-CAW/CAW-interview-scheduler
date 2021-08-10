@@ -17,7 +17,6 @@ import {
 import { AddIcon } from '@chakra-ui/icons';
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import validator from 'validator';
 import {
   addInterview,
   updateInterview,
@@ -68,15 +67,6 @@ function AddInterview({ interviews }) {
     if (!name || !date || !time || !email || !contact) {
       popup({
         title: 'No Content',
-        status: 'error',
-        duration: 2000,
-        isClosable: true,
-      });
-      return;
-    }
-    if (!validator.isEmail(email)) {
-      popup({
-        title: 'Invalid Email',
         status: 'error',
         duration: 2000,
         isClosable: true,
