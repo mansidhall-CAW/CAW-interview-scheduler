@@ -19,6 +19,7 @@ import ListInterviews from './components/listinterviews/ListInterviews';
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
   const interviews = useSelector((state) => state.item.interviews);
+  console.log(interviews);
 
   return (
     <VStack p={4}>
