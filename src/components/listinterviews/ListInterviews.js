@@ -49,6 +49,8 @@ function ListInterviews({ item, index }) {
     dispatch(updateIndex(-1));
   }
 
+  console.log("new log");
+
   return (
     <div>
       <Box
