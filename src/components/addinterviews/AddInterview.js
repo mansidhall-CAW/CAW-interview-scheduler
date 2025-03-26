@@ -117,7 +117,7 @@ function AddInterview({ interviews }) {
     onClose();
   }
 
-  // const yesterday = moment().subtract(1, 'day');
+  const yesterday = moment().subtract(1, 'day');
   // const disablePastDt = current => current.isAfter(yesterday);
 
   return (
