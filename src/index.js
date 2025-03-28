@@ -15,6 +15,8 @@ const theme = extendTheme({
   config,
 });
 
+console.log(config,"config");
+
 ReactDOM.render(
   <ChakraProvider>
     <ColorModeScript initialColorMode={theme.config.initialColorMode} />

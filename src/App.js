@@ -20,6 +20,7 @@ function App() {
   const { colorMode, toggleColorMode } = useColorMode();
   const interviews = useSelector((state) => state.item.interviews);
 
+  console.log("testing");
   return (
     <VStack p={4}>
       <IconButton
